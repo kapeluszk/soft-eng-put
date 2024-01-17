@@ -11,6 +11,9 @@ import AdminPage from './pages/AdminPage';
 import { ProtectedRoute } from './components/ProtectedRoute';
 import Ticket from './interfaces/TicketUser';
 import TicketDetails from './pages/TicketDetails';
+import UserDetails from './pages/UserDetails';
+import UserList from './pages/UserList';
+import UserNew from './pages/UserNew';
 
 function App() {
   const [authenticated, setAuthenticated] = useState(false);
@@ -57,7 +60,6 @@ function App() {
           <Route path="/tickets/user" element={<TicketsPageUser tickets={tickets} />} />
           <Route path="/tickets/user/:id" element={<TicketDetails tickets={tickets} />} />
           <Route path="/admin" element={<AdminPage />} />
-          
         </Route>
       </Routes>
       <div className="App">
