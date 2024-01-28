@@ -45,6 +45,8 @@ const AdminPage = () => {
     return (
         <div className="container mt-4">
             <h2>Zarządzanie użytkownikami</h2>
+            <Button variant="secondary" onClick={() => alert("to be implemented.")} className="m-2">Dodaj użytkownika</Button>
+            <Button variant="success" onClick={() => alert("to be implemented.")} className="m-2">Wczytaj użytkowników z CSV</Button>
             <Table striped bordered hover>
                 <thead>
                     <tr>
@@ -74,6 +76,19 @@ const AdminPage = () => {
                             </td>
                         </tr>
                     ))}
+                    <tr>
+                        <td>5</td>
+                        <td>Marcin Marciniak</td>
+                        <td>MarcinM@systemowy.pl</td>
+                        <td>Użytkownik</td>
+                        <td><Form.Select aria-label="Status select" value={"Aktywny"} onChange={(e) => { }}>
+                            <option value="active">Aktywny</option>
+                            <option value="inactive">Nieaktywny</option>
+                        </Form.Select></td>
+                        <td>
+                            <Button variant="danger" onClick={() => alert("to be implemented")}>Usuń użytkownika</Button>
+                        </td>
+                    </tr>
                 </tbody>
             </Table>
             <h3>

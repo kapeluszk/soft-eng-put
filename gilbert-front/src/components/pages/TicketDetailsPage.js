@@ -49,7 +49,7 @@ const TicketDetailsPage = () => {
                         </Form.Group>
                         {userInfo.permissions === 'user' && (
                             <>
-                                <Button variant="danger" onClick={handleSendMessage}>Usuń ticket</Button>
+                                <Button variant="danger" onClick={() => alert("to be implemented.")}>Usuń ticket</Button>
                                 <Button variant="secondary" onClick={() => alert("to be implemented.")} className="ms-2">Dodaj załącznik</Button>
                             </>
                         )}
